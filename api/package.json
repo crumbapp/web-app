@@ -1,0 +1,28 @@
+{
+  "name": "api",
+  "version": "0.0.1",
+  "description": "Express server for crumb webapp, serves up api",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crumbapp/web-app.git"
+  },
+  "keywords": [
+    "crumb"
+  ],
+  "author": "Jimmy Gong",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/crumbapp/web-app/issues"
+  },
+  "homepage": "https://github.com/crumbapp/web-app#readme",
+  "dependencies": {
+    "babel": "^5.8.19",
+    "body-parser": "^1.13.2",
+    "cookie-parser": "^1.3.5",
+    "express": "^4.13.1"
+  }
+}
