@@ -63,4 +63,6 @@ gulp.task('watch', () => {
     .pipe(gulp.dest(path.DEST));
 });
 
+gulp.task('build', ['copy', 'devReplace']);
+
 gulp.task('default', ['devReplace', 'watch']);

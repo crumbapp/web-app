@@ -1,6 +1,7 @@
 {
   "name": "public",
   "version": "0.0.1",
+  "private": true,
   "description": "Clientside assets and scripts for Crumb Webapp",
   "main": "../index.js",
   "scripts": {
