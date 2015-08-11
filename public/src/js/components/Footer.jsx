@@ -7,7 +7,7 @@
 import React from 'react';
 
 //  TODO: Implement Footer page links
-//  import {Link} from 'react-router';
+//  import { Link } from 'react-router';
 
 class Footer extends React.Component {
   render() {

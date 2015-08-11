@@ -15,19 +15,21 @@ ADD package.json /tmp/package.json
 RUN cd /tmp && npm install
 RUN mkdir -p /var/www/node_modules && cp -a /tmp/node_modules /var/www
 
-# Copy custom configuration file from the current directory
-COPY nginx.conf /etc/nginx/nginx.conf
+# Copy nginx configurations
+COPY nginx/nginx.conf /etc/nginx/nginx.conf
+COPY nginx/mime.types /etc/nginx/mime.types
+COPY nginx/default /etc/nginx/sites-enabled/default
 
 # Copy static assets into var/www
 COPY . /var/www
 
 WORKDIR /var/www
 
+# Install and utilize gulp build task
 RUN npm install -g gulp
+RUN gulp production
 
-RUN gulp build
-
-# Expost port 80
+# Expose port 80
 EXPOSE 80
 
 # Start up nginx server

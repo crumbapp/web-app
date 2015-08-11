@@ -4,9 +4,7 @@
  */
 
 import React from 'react';
-import Router from 'react-router';
-
-const RouteHandler = Router.RouteHandler;
+import { RouteHandler } from 'react-router';
 
 /**
  * Required Components

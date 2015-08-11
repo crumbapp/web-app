@@ -7,12 +7,19 @@
 import React from 'react';
 
 //  TODO: Implement NavBar page links
-//  import {Link} from 'react-router';
+ import { Link } from 'react-router';
 
 class NavBar extends React.Component {
   render() {
     return (
-      <div className="app-navbar"></div>
+      <div className="app-navbar">
+        <Link to="login">
+          <button>Login</button>
+        </Link>
+        <Link to="signup">
+          <button>Signup</button>
+        </Link>
+      </div>
     );
   }
 }

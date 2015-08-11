@@ -5,7 +5,8 @@
   "description": "Clientside assets and scripts for Crumb Webapp",
   "main": "../index.js",
   "scripts": {
-    "test": "mocha test"
+    "test": "mocha test",
+    "start": "node test/server.js"
   },
   "repository": {
     "type": "git",
@@ -42,9 +43,10 @@
     "del": "^1.2.0",
     "eslint": "^0.24.0",
     "eslint-plugin-react": "^2.6.4",
-    "express": "^4.13.1",
+    "express": "^4.13.3",
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^2.3.1",
+    "gulp-concat": "^2.6.0",
     "gulp-eslint": "^0.15.0",
     "gulp-html-replace": "^1.5.1",
     "gulp-if": "^1.2.5",
@@ -53,7 +55,9 @@
     "gulp-load-plugins": "^0.10.0",
     "gulp-load-utils": "0.0.4",
     "gulp-sourcemaps": "^1.5.2",
+    "gulp-uglify": "^1.2.0",
     "minimist": "^1.1.1",
+    "morgan": "^1.6.1",
     "psi": "^1.0.6",
     "run-sequence": "^1.1.1",
     "vinyl-buffer": "^1.0.0",

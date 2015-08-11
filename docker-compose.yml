@@ -4,6 +4,8 @@ web:
     - nodeapi1:nodeapi1
   ports:
     - "80:80"
+  # volumes:
+    # - ./public:/var/www
 
 nodeapi1:
   build: ./api
